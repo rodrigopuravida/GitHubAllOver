@@ -7,3 +7,20 @@
 //
 
 import Foundation
+
+class NetworkController {
+  
+  var urlSession : NSURLSession
+  
+  init() {
+    let ephemeralConfig = NSURLSessionConfiguration.ephemeralSessionConfiguration()
+    self.urlSession = NSURLSession(configuration: ephemeralConfig)
+    
+  }
+
+
+
+
+
+
+}

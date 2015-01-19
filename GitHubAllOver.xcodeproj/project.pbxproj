@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		48B6528F1A6DAD25007C4593 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B6528E1A6DAD25007C4593 /* NetworkController.swift */; };
 		48B652931A6DB846007C4593 /* SearchRepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B652921A6DB846007C4593 /* SearchRepositoriesViewController.swift */; };
+		48C0079F1A6DC08D0062ECA6 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C0079E1A6DC08D0062ECA6 /* Repository.swift */; };
 		48CEDE461A6DA74100892019 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CEDE451A6DA74100892019 /* AppDelegate.swift */; };
 		48CEDE4B1A6DA74100892019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CEDE491A6DA74100892019 /* Main.storyboard */; };
 		48CEDE4D1A6DA74100892019 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48CEDE4C1A6DA74100892019 /* Images.xcassets */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		48B6528E1A6DAD25007C4593 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		48B652921A6DB846007C4593 /* SearchRepositoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesViewController.swift; sourceTree = "<group>"; };
+		48C0079E1A6DC08D0062ECA6 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		48CEDE401A6DA74100892019 /* GitHubAllOver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubAllOver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48CEDE441A6DA74100892019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48CEDE451A6DA74100892019 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		48CEDE681A6DA9F400892019 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				48C0079E1A6DC08D0062ECA6 /* Repository.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			files = (
 				48CEDE6B1A6DAA3600892019 /* IntroTableViewController.swift in Sources */,
 				48CEDE461A6DA74100892019 /* AppDelegate.swift in Sources */,
+				48C0079F1A6DC08D0062ECA6 /* Repository.swift in Sources */,
 				48B652931A6DB846007C4593 /* SearchRepositoriesViewController.swift in Sources */,
 				48B6528F1A6DAD25007C4593 /* NetworkController.swift in Sources */,
 			);

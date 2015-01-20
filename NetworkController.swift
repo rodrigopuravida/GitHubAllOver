@@ -18,7 +18,13 @@ class NetworkController {
     return Static.instance
   }
   
+  
+  let clientSecret = "993f5a4f770fdf881053016eb0f803a549362890"
+  let clientID = "bc49fc7c020ac3e9a6d4"
   var urlSession : NSURLSession
+  let accessTokenUserDefaultsKey = "accessToken"
+  var accessToken : String?
+
   
   init() {
     let ephemeralConfig = NSURLSessionConfiguration.ephemeralSessionConfiguration()

@@ -20,10 +20,7 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDataSource,
       
       self.tableView.dataSource = self
       self.searchBar.delegate = self
-      self.networkController.fetchRepositoriesBasedOnSearch("Swift", callback: { (items, errorDescription) -> (Void) in
-        
-      })
-  }
+        }
   
       func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
@@ -44,6 +41,11 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDataSource,
       
       func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         println(searchBar.text)
+        
+        self.networkController.fetchRepositoriesBasedOnSearch(searchBar.text, callback: { (items, errorDescription) -> (Void) in
+          
+        })
+
         searchBar.resignFirstResponder()
         //make your network call here based on the search term
       }

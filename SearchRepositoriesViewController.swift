@@ -11,12 +11,13 @@ import UIKit
 class SearchRepositoriesViewController: UIViewController, UITableViewDataSource, UISearchBarDelegate {
   
   
+  @IBOutlet weak var nsmeLbl: UILabel!
+  @IBOutlet weak var usernameLbl: UILabel!
   @IBOutlet weak var tableView: UITableView!
   @IBOutlet weak var searchBar: UISearchBar!
   let networkController = NetworkController()
   var repositories = [Repository]()
  
-  @IBOutlet weak var nameLbl: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +32,7 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDataSource,
       
       func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("REPO_CELL", forIndexPath: indexPath) as UITableViewCell
-        self.nameLbl.text = self.repositories[indexPath.row].name
+        cell.textLabel?.text = self.repositories[indexPath.row].name
         return cell
       }
 
@@ -49,6 +50,8 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDataSource,
         self.networkController.fetchRepositoriesBasedOnSearch(searchBar.text, callback: { (items, errorDescription) -> (Void) in
         println(items)
         self.repositories = items!
+          
+          self.tableView.reloadData()
           
 
         println("I am back at SearchRepositoryController")

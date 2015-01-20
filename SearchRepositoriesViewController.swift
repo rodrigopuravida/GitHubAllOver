@@ -14,6 +14,7 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDataSource,
   @IBOutlet weak var tableView: UITableView!
   @IBOutlet weak var searchBar: UISearchBar!
   let networkController = NetworkController()
+  var searchResults : Repository?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +44,8 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDataSource,
         println(searchBar.text)
         
         self.networkController.fetchRepositoriesBasedOnSearch(searchBar.text, callback: { (items, errorDescription) -> (Void) in
-          
+          println(items)
+          println("I am back at SearchRepositoryController")          
         })
 
         searchBar.resignFirstResponder()

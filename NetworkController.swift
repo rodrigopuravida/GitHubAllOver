@@ -10,6 +10,14 @@ import Foundation
 
 class NetworkController {
   
+  //singleton setup
+  class var sharedNetworkController : NetworkController {
+    struct Static {
+      static let instance : NetworkController = NetworkController()
+    }
+    return Static.instance
+  }
+  
   var urlSession : NSURLSession
   
   init() {

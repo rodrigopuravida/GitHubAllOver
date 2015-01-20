@@ -26,7 +26,7 @@ class NetworkController {
       if let httpRes = response as? NSHTTPURLResponse {
         println("status code=",httpRes.statusCode)
         if httpRes.statusCode == 200 {
-          //println(NSString(data: data, encoding: NSUTF8StringEncoding))
+          println(NSString(data: data, encoding: NSUTF8StringEncoding))
           
           if let jsonDict = NSJSONSerialization.JSONObjectWithData(data, options: nil, error:nil) as? [String : AnyObject] {
             println("I made into Serialization of json")

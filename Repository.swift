@@ -12,10 +12,14 @@ struct Repository {
   
   
   let name : String
+  let items : [String : AnyObject]
   
   
   init(jsonDictionary : [String : AnyObject]) {
     self.name = jsonDictionary["name"] as String
+    self.items = jsonDictionary["items"] as [String : AnyObject]
+
+    
   }
   
 }

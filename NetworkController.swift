@@ -30,6 +30,7 @@ class NetworkController {
           
           if let jsonDict = NSJSONSerialization.JSONObjectWithData(data, options: nil, error:nil) as? [String : AnyObject] {
             println("I made into Serialization of json")
+            //println(jsonDict)
 
             if let items = jsonDict["items"] as? [AnyObject] {
               var repos = [Repository]()
@@ -38,17 +39,15 @@ class NetworkController {
                 if let repoItem = object as? [String : AnyObject] {
                   let repo = Repository(jsonDictionary: repoItem)
                   repos.append(repo)
-                  println(repos)
-                  
-                  //instantiate a Tweet class
-                  NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
-                    callback(repos, nil)
-                  })
-                }
+                  //println(repos)
+                  }
               }
+              //instantiate a Repository class
+              NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
+                callback(repos, nil)
+              })
 
             }
-            
             
           }
           
@@ -56,10 +55,8 @@ class NetworkController {
       } else {
         println("error \(error)") // print the error!
       }
-
     })
-    dataTask.resume()
-    
+    dataTask.resume()    
   }
   
 

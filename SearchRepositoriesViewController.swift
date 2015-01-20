@@ -15,7 +15,7 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDataSource,
   @IBOutlet weak var usernameLbl: UILabel!
   @IBOutlet weak var tableView: UITableView!
   @IBOutlet weak var searchBar: UISearchBar!
-  let networkController = NetworkController()
+  var networkController : NetworkController!
   var repositories = [Repository]()
  
 
@@ -24,6 +24,10 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDataSource,
       
       self.tableView.dataSource = self
       self.searchBar.delegate = self
+      
+      let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+      self.networkController = appDelegate.networkController
+      
         }
   
       func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -52,7 +56,6 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDataSource,
         self.repositories = items!
           
           self.tableView.reloadData()
-          
 
         println("I am back at SearchRepositoryController")
         })

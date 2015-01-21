@@ -19,6 +19,7 @@
 		48CEDE5C1A6DA74200892019 /* GitHubAllOverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CEDE5B1A6DA74200892019 /* GitHubAllOverTests.swift */; };
 		48CEDE661A6DA7EF00892019 /* Tasks in Resources */ = {isa = PBXBuildFile; fileRef = 48CEDE651A6DA7EF00892019 /* Tasks */; };
 		48CEDE6B1A6DAA3600892019 /* IntroTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CEDE6A1A6DAA3600892019 /* IntroTableViewController.swift */; };
+		48F3F32A1A7063B00079071D /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F3F3291A7063B00079071D /* UserCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		48CEDE5B1A6DA74200892019 /* GitHubAllOverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAllOverTests.swift; sourceTree = "<group>"; };
 		48CEDE651A6DA7EF00892019 /* Tasks */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tasks; sourceTree = "<group>"; };
 		48CEDE6A1A6DAA3600892019 /* IntroTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroTableViewController.swift; sourceTree = "<group>"; };
+		48F3F3291A7063B00079071D /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 		48CEDE681A6DA9F400892019 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				48F3F3291A7063B00079071D /* UserCell.swift */,
 				48C785FC1A705F9300012323 /* User.swift */,
 				48C0079E1A6DC08D0062ECA6 /* Repository.swift */,
 			);
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48F3F32A1A7063B00079071D /* UserCell.swift in Sources */,
 				48CEDE6B1A6DAA3600892019 /* IntroTableViewController.swift in Sources */,
 				48CEDE461A6DA74100892019 /* AppDelegate.swift in Sources */,
 				48C0079F1A6DC08D0062ECA6 /* Repository.swift in Sources */,

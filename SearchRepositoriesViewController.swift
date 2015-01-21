@@ -28,6 +28,7 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDataSource,
       let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
       self.networkController = appDelegate.networkController
       
+      
         }
   
       func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

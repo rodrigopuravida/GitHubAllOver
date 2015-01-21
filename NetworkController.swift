@@ -1,4 +1,4 @@
-//
+ //
 //  NetworkController.swift
 //  GitHubAllOver
 //
@@ -118,7 +118,7 @@ class NetworkController {
                   let repo = Repository(jsonDictionary: repoItem)
                   repos.append(repo)
                   //println(repos)
-                  }
+                  } 
               }
               //instantiate a Repository class
               NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in

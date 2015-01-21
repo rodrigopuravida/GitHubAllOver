@@ -78,7 +78,6 @@ class NetworkController {
             NSUserDefaults.standardUserDefaults().setObject(accessToken!, forKey: self.accessTokenUserDefaultsKey)
             NSUserDefaults.standardUserDefaults().synchronize()
             
-            
           default:
             println("default case")
           }
@@ -87,7 +86,6 @@ class NetworkController {
       
     })
     dataTask.resume()
-    
   }
   
   func fetchRepositoriesBasedOnSearch(searchString : String, callback : ([Repository]?, String?) -> (Void)) {

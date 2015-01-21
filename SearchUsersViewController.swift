@@ -10,6 +10,9 @@ import UIKit
 
 class SearchUsersViewController: UIViewController {
 
+  @IBOutlet weak var collectionView: UICollectionView!
+  @IBOutlet weak var searchBar: UISearchBar!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 

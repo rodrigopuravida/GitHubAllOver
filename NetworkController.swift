@@ -106,6 +106,7 @@ class NetworkController {
         
         println("status code=",httpRes.statusCode)
         if httpRes.statusCode == 200 {
+          println("I made it into the 200 for user search")
           
           if let jsonDict = NSJSONSerialization.JSONObjectWithData(data, options: nil, error:nil) as? [String : AnyObject] {
             println("I made into Serialization of json")
@@ -139,13 +140,16 @@ class NetworkController {
   }
   
   func fetchUsersForSearchTerm(searchTerm : String, callback : ([User]?, String?) -> (Void)) {
-    let url = NSURL(string: "https://api.github.com/search/users?q=\(searchTerm)")
+    let  url = NSURL(string: "https://api.github.com/search/users?q=\(searchTerm)")
+    println(url)
     let request = NSMutableURLRequest(URL: url!)
     //this line is how github knows who is making the request
     request.setValue("token \(self.accessToken!)", forHTTPHeaderField: "Authorization")
     
     
     let dataTask = self.urlSession.dataTaskWithRequest(request, completionHandler: { (data, response, error) -> Void in
+    //let dataTask = self.urlSession.dataTaskWithURL(url!, completionHandler: { (data, response, error) -> Void in
+      println(error)
       if error == nil {
         
         if let httpResponse = response as? NSHTTPURLResponse {

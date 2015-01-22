@@ -13,11 +13,18 @@ class UserDetailViewController: UIViewController {
   @IBOutlet weak var imageView: UIImageView!
   var selectedUser : User!
   
+  @IBOutlet weak var loginLbl: UILabel!
  
+  @IBOutlet weak var scoreLbl: UILabel!
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    var double = selectedUser.score
+    var stringFromDouble = "\(double)"
+    
     self.imageView.image = selectedUser.avatarImage
+    self.loginLbl.text = "Login: " + selectedUser.login
+    self.scoreLbl.text = "Score: " + stringFromDouble
     
     // Do any additional setup after loading the view.
   }

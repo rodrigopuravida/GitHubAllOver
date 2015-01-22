@@ -64,6 +64,10 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDataSource,
         searchBar.resignFirstResponder()
         //make your network call here based on the search term
       }
+  
+  func searchBar(searchBar: UISearchBar, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+    return text.validate()
+  }
 }
 
 

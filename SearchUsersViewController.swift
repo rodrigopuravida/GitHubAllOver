@@ -82,4 +82,12 @@ class SearchUsersViewController: UIViewController, UICollectionViewDataSource, U
       
     }
   }
+  
+  func searchBar(searchBar: UISearchBar, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+    return text.validate()
+  }
+
+  
+  
+  
 }

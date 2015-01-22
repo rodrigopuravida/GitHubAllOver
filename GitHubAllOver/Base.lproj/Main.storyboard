@@ -256,22 +256,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBU-qU-Ino">
+                                <rect key="frame" x="185" y="356" width="229" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="229" id="ZGi-Bh-SWY"/>
+                                    <constraint firstAttribute="height" constant="21" id="f8O-PH-OlH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUS-Sm-i1f">
+                                <rect key="frame" x="185" y="422" width="229" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uH6-r0-wX7">
-                                <rect key="frame" x="185.5" y="135" width="229" height="196"/>
+                                <rect key="frame" x="186" y="110" width="229" height="196"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="229" id="9Hk-WZ-i3N"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="229" id="Boh-cf-PlJ"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="196" id="EWE-N5-L4U"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="196" id="Kou-mn-dx0"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="229" id="iKO-uw-6Bt"/>
                                     <constraint firstAttribute="height" constant="196" id="ua8-6c-KiH"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="uH6-r0-wX7" secondAttribute="centerX" id="2fA-pD-5uP"/>
-                            <constraint firstItem="uH6-r0-wX7" firstAttribute="top" secondItem="MAF-34-3ip" secondAttribute="bottom" constant="71" id="zzo-gM-cw2"/>
+                            <constraint firstItem="VBU-qU-Ino" firstAttribute="leading" secondItem="KUS-Sm-i1f" secondAttribute="leading" id="28I-aI-9Zv"/>
+                            <constraint firstItem="uH6-r0-wX7" firstAttribute="top" secondItem="MAF-34-3ip" secondAttribute="bottom" constant="46" id="4Wf-kT-hvy"/>
+                            <constraint firstItem="uH6-r0-wX7" firstAttribute="centerX" secondItem="yqI-GY-hPj" secondAttribute="centerX" id="L8I-fv-t0f"/>
+                            <constraint firstItem="VBU-qU-Ino" firstAttribute="top" secondItem="uH6-r0-wX7" secondAttribute="bottom" constant="50" id="LUm-4d-rVs"/>
+                            <constraint firstItem="KUS-Sm-i1f" firstAttribute="top" secondItem="VBU-qU-Ino" secondAttribute="bottom" constant="45" id="Wfw-2P-CyC"/>
+                            <constraint firstItem="VBU-qU-Ino" firstAttribute="leading" secondItem="yqI-GY-hPj" secondAttribute="leading" constant="185" id="d2H-zu-97m"/>
+                            <constraint firstItem="VBU-qU-Ino" firstAttribute="trailing" secondItem="KUS-Sm-i1f" secondAttribute="trailing" id="qFs-dO-He6"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="uH6-r0-wX7" id="a4N-b1-flT"/>
+                        <outlet property="loginLbl" destination="VBU-qU-Ino" id="WvK-Gc-SrB"/>
+                        <outlet property="scoreLbl" destination="KUS-Sm-i1f" id="6gm-qf-Wml"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2nf-C9-zGr" userLabel="First Responder" sceneMemberID="firstResponder"/>

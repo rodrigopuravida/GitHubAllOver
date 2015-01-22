@@ -214,7 +214,7 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="imageView" destination="onE-2x-IXu" id="4k9-Xl-O4C"/>
-                                            <segue destination="AKq-gW-zlS" kind="show" id="eeb-oj-pYD"/>
+                                            <segue destination="AKq-gW-zlS" kind="show" identifier="SHOW_USER_DETAIL" id="eeb-oj-pYD"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

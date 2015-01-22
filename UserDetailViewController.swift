@@ -17,7 +17,7 @@ class UserDetailViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    //self.imageView.image = selectedUser.avatarImage
+    self.imageView.image = selectedUser.avatarImage
     
     // Do any additional setup after loading the view.
   }

@@ -74,7 +74,11 @@ class SearchUsersViewController: UIViewController, UICollectionViewDataSource, U
   
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    println("I'm here")
+    
+    
     if segue.identifier == "SHOW_USER_DETAIL" {
+      println("Im inside if")
       let destinationVC = segue.destinationViewController as UserDetailViewController
       let selectedIndexPath = self.collectionView.indexPathsForSelectedItems().first  as NSIndexPath
       destinationVC.selectedUser = self.users[selectedIndexPath.row]

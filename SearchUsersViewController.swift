@@ -47,8 +47,11 @@ class SearchUsersViewController: UIViewController, UICollectionViewDataSource, U
     }
     return cell
   }
-
   
+  func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    
+  }
+
   
   //MARK: UISearchBarDelegate
   
@@ -63,16 +66,23 @@ class SearchUsersViewController: UIViewController, UICollectionViewDataSource, U
       }
     })
   }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+  
+  
+  func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    if fromVC is SearchUsersViewController {
+      //return the animation controller
+      return ToUserDetailAnimationController()
     }
-    */
-
+    return nil
+  }
+  
+  
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if segue.identifier == "SHOW_USER_DETAIL" {
+      let destinationVC = segue.destinationViewController as UserDetailViewController
+      let selectedIndexPath = self.collectionView.indexPathsForSelectedItems().first  as NSIndexPath
+      destinationVC.selectedUser = self.users[selectedIndexPath.row]
+      
+    }
+  }
 }

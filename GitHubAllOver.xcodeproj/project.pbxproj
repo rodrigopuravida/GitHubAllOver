@@ -20,6 +20,8 @@
 		48CEDE661A6DA7EF00892019 /* Tasks in Resources */ = {isa = PBXBuildFile; fileRef = 48CEDE651A6DA7EF00892019 /* Tasks */; };
 		48CEDE6B1A6DAA3600892019 /* IntroTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CEDE6A1A6DAA3600892019 /* IntroTableViewController.swift */; };
 		48F3F32A1A7063B00079071D /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F3F3291A7063B00079071D /* UserCell.swift */; };
+		48F3F32C1A70752B0079071D /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F3F32B1A70752B0079071D /* UserDetailViewController.swift */; };
+		48F3F32E1A7077310079071D /* ToUserDetailAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F3F32D1A7077310079071D /* ToUserDetailAnimationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		48CEDE651A6DA7EF00892019 /* Tasks */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tasks; sourceTree = "<group>"; };
 		48CEDE6A1A6DAA3600892019 /* IntroTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroTableViewController.swift; sourceTree = "<group>"; };
 		48F3F3291A7063B00079071D /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		48F3F32B1A70752B0079071D /* UserDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		48F3F32D1A7077310079071D /* ToUserDetailAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToUserDetailAnimationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,8 @@
 		48CEDE671A6DA9E600892019 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				48F3F32B1A70752B0079071D /* UserDetailViewController.swift */,
+				48F3F32D1A7077310079071D /* ToUserDetailAnimationController.swift */,
 				48C785FA1A705A5C00012323 /* SearchUsersViewController.swift */,
 				48B652921A6DB846007C4593 /* SearchRepositoriesViewController.swift */,
 				48B6528E1A6DAD25007C4593 /* NetworkController.swift */,
@@ -260,12 +266,14 @@
 			files = (
 				48F3F32A1A7063B00079071D /* UserCell.swift in Sources */,
 				48CEDE6B1A6DAA3600892019 /* IntroTableViewController.swift in Sources */,
+				48F3F32C1A70752B0079071D /* UserDetailViewController.swift in Sources */,
 				48CEDE461A6DA74100892019 /* AppDelegate.swift in Sources */,
 				48C0079F1A6DC08D0062ECA6 /* Repository.swift in Sources */,
 				48B652931A6DB846007C4593 /* SearchRepositoriesViewController.swift in Sources */,
 				48B6528F1A6DAD25007C4593 /* NetworkController.swift in Sources */,
 				48C785FB1A705A5C00012323 /* SearchUsersViewController.swift in Sources */,
 				48C785FD1A705F9300012323 /* User.swift in Sources */,
+				48F3F32E1A7077310079071D /* ToUserDetailAnimationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

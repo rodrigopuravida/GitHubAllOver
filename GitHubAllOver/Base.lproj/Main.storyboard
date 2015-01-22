@@ -184,8 +184,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="h0T-yq-tO4">
-                                <rect key="frame" x="0.0" y="120" width="600" height="600"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="h0T-yq-tO4">
+                                <rect key="frame" x="0.0" y="120" width="600" height="480"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qus-qh-Q9M">
                                     <size key="itemSize" width="100" height="100"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -214,16 +214,23 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="imageView" destination="onE-2x-IXu" id="4k9-Xl-O4C"/>
+                                            <segue destination="AKq-gW-zlS" kind="show" id="eeb-oj-pYD"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                             <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ptc-tG-A9B">
-                                <rect key="frame" x="0.0" y="72" width="600" height="56"/>
+                                <rect key="frame" x="0.0" y="72" width="600" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="h0T-yq-tO4" firstAttribute="leading" secondItem="sFn-et-88F" secondAttribute="leadingMargin" constant="-16" id="RRb-bM-lWA"/>
+                            <constraint firstItem="h0T-yq-tO4" firstAttribute="top" secondItem="VBm-iv-OYC" secondAttribute="bottom" constant="56" id="Zr1-sV-uO4"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="h0T-yq-tO4" secondAttribute="bottom" id="lB5-CO-C2I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="h0T-yq-tO4" secondAttribute="trailing" constant="-16" id="mb6-Oa-lZY"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="h0T-yq-tO4" id="Gpp-JA-XiN"/>
@@ -233,6 +240,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CMH-gE-RCQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="522" y="803"/>
+        </scene>
+        <!--User Detail View Controller-->
+        <scene sceneID="Ztj-05-elN">
+            <objects>
+                <viewController storyboardIdentifier="SHOW_USER_DETAIL" id="AKq-gW-zlS" customClass="UserDetailViewController" customModule="GitHubAllOver" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MAF-34-3ip"/>
+                        <viewControllerLayoutGuide type="bottom" id="POe-Iy-cTx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yqI-GY-hPj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uH6-r0-wX7">
+                                <rect key="frame" x="185.5" y="135" width="229" height="196"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="229" id="9Hk-WZ-i3N"/>
+                                    <constraint firstAttribute="height" constant="196" id="ua8-6c-KiH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="uH6-r0-wX7" secondAttribute="centerX" id="2fA-pD-5uP"/>
+                            <constraint firstItem="uH6-r0-wX7" firstAttribute="top" secondItem="MAF-34-3ip" secondAttribute="bottom" constant="71" id="zzo-gM-cw2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="uH6-r0-wX7" id="a4N-b1-flT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2nf-C9-zGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1213" y="583"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jO0-Rx-h0v">

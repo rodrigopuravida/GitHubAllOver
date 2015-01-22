@@ -219,15 +219,18 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ptc-tG-A9B">
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Ptc-tG-A9B">
                                 <rect key="frame" x="0.0" y="72" width="600" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Ptc-tG-A9B" firstAttribute="leading" secondItem="sFn-et-88F" secondAttribute="leadingMargin" constant="-16" id="3r2-TA-fyh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ptc-tG-A9B" secondAttribute="trailing" constant="-16" id="8f9-A4-ByO"/>
                             <constraint firstItem="h0T-yq-tO4" firstAttribute="leading" secondItem="sFn-et-88F" secondAttribute="leadingMargin" constant="-16" id="RRb-bM-lWA"/>
                             <constraint firstItem="h0T-yq-tO4" firstAttribute="top" secondItem="VBm-iv-OYC" secondAttribute="bottom" constant="56" id="Zr1-sV-uO4"/>
+                            <constraint firstItem="Ptc-tG-A9B" firstAttribute="top" secondItem="VBm-iv-OYC" secondAttribute="bottom" constant="8" id="k5y-eO-VJw"/>
                             <constraint firstAttribute="bottomMargin" secondItem="h0T-yq-tO4" secondAttribute="bottom" id="lB5-CO-C2I"/>
                             <constraint firstAttribute="trailingMargin" secondItem="h0T-yq-tO4" secondAttribute="trailing" constant="-16" id="mb6-Oa-lZY"/>
                         </constraints>

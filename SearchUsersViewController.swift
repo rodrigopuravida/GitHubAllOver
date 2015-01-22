@@ -48,11 +48,7 @@ class SearchUsersViewController: UIViewController, UICollectionViewDataSource, U
     return cell
   }
   
-  func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    
-  }
-
-  
+   
   //MARK: UISearchBarDelegate
   
   func searchBarSearchButtonClicked(searchBar: UISearchBar) {
@@ -69,7 +65,7 @@ class SearchUsersViewController: UIViewController, UICollectionViewDataSource, U
   
   
   func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-    if fromVC is SearchUsersViewController {
+    if (fromVC is SearchUsersViewController && toVC is UserDetailViewController) {
       //return the animation controller
       return ToUserDetailAnimationController()
     }

@@ -54,7 +54,7 @@ class ToUserDetailAnimationController : NSObject, UIViewControllerAnimatedTransi
         //clean up
         toVC.imageView.hidden = false
         cell.imageView.hidden = false
-        snapshotOfCell.removeFromSuperview()
+        //snapshotOfCell.removeFromSuperview()
         transitionContext.completeTransition(true)
     }
     

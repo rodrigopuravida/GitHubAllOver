@@ -157,6 +157,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="5zr-aS-5GZ" kind="show" identifier="SHOW_WEB" id="pMe-Um-XLC"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -171,6 +174,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iii-2G-lR4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="508" y="-117"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="SNa-mP-tuk">
+            <objects>
+                <viewController id="5zr-aS-5GZ" customClass="WebViewController" customModule="GitHubAllOver" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4qp-wi-nNS"/>
+                        <viewControllerLayoutGuide type="bottom" id="2HO-9Q-tOc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ef4-ow-Plp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vcC-6l-TGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1187" y="-139"/>
         </scene>
         <!--Search Users View Controller-->
         <scene sceneID="Y54-Lq-XOw">

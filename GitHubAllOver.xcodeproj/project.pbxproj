@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		48405DD01A71C03F002D95FA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48405DCF1A71C03F002D95FA /* Extensions.swift */; };
+		48405DD21A71C682002D95FA /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48405DD11A71C682002D95FA /* WebViewController.swift */; };
 		48B6528F1A6DAD25007C4593 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B6528E1A6DAD25007C4593 /* NetworkController.swift */; };
 		48B652931A6DB846007C4593 /* SearchRepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B652921A6DB846007C4593 /* SearchRepositoriesViewController.swift */; };
 		48C0079F1A6DC08D0062ECA6 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C0079E1A6DC08D0062ECA6 /* Repository.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		48405DCF1A71C03F002D95FA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		48405DD11A71C682002D95FA /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		48B6528E1A6DAD25007C4593 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		48B652921A6DB846007C4593 /* SearchRepositoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesViewController.swift; sourceTree = "<group>"; };
 		48C0079E1A6DC08D0062ECA6 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		48CEDE671A6DA9E600892019 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				48405DD11A71C682002D95FA /* WebViewController.swift */,
 				48F3F32B1A70752B0079071D /* UserDetailViewController.swift */,
 				48F3F32D1A7077310079071D /* ToUserDetailAnimationController.swift */,
 				48C785FA1A705A5C00012323 /* SearchUsersViewController.swift */,
@@ -274,6 +277,7 @@
 				48C0079F1A6DC08D0062ECA6 /* Repository.swift in Sources */,
 				48B652931A6DB846007C4593 /* SearchRepositoriesViewController.swift in Sources */,
 				48B6528F1A6DAD25007C4593 /* NetworkController.swift in Sources */,
+				48405DD21A71C682002D95FA /* WebViewController.swift in Sources */,
 				48C785FB1A705A5C00012323 /* SearchUsersViewController.swift in Sources */,
 				48C785FD1A705F9300012323 /* User.swift in Sources */,
 				48405DD01A71C03F002D95FA /* Extensions.swift in Sources */,

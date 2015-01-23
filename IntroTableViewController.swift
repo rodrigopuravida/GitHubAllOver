@@ -28,6 +28,7 @@ class IntroTableViewController: UITableViewController {
   
   override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)
+    self.navigationController?.delegate = nil
     if self.networkController.accessToken == nil {
       self.networkController.requestAccessToken()
     }

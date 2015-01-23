@@ -12,14 +12,13 @@ struct Repository {
   
   
   let name : String?
-  //var author : String
+  let url : String
   
   init(jsonDictionary : [String : AnyObject]) {
     
   self.name = jsonDictionary["name"] as String!
-    println(self.name)
-  //self.author = jsonDictionary["full_name"] as String
-  
+  self.url = jsonDictionary["html_url"] as String
+    
   }
   
 }

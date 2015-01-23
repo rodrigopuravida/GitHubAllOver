@@ -68,6 +68,23 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDataSource,
   func searchBar(searchBar: UISearchBar, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
     return text.validate()
   }
+  
+  
+  
+  // MARK: - Navigationrl
+  
+  // In a storyboard-based application, you will often want to do a little preparation before navigation
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if segue.identifier == "SHOW_WEB" {
+      let destinationVC = segue.destinationViewController as WebViewController
+      let selectedIndexPath = self.tableView.indexPathForSelectedRow()
+      let repo = self.repositories[selectedIndexPath!.row]
+      println(repo)
+      destinationVC.url = repo.url
+    }
+  }
+
+  
 }
 
 

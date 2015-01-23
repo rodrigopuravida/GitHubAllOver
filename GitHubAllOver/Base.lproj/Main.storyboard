@@ -278,7 +278,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label1" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBU-qU-Ino">
-                                <rect key="frame" x="185" y="356" width="229" height="21"/>
+                                <rect key="frame" x="185" y="331" width="229" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="229" id="ZGi-Bh-SWY"/>
                                     <constraint firstAttribute="height" constant="21" id="f8O-PH-OlH"/>
@@ -306,8 +306,8 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUS-Sm-i1f">
-                                <rect key="frame" x="185" y="410" width="229" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUS-Sm-i1f">
+                                <rect key="frame" x="186" y="362" width="228" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -321,15 +321,14 @@
                             <constraint firstItem="VBU-qU-Ino" firstAttribute="leading" secondItem="uH6-r0-wX7" secondAttribute="leading" constant="-1" id="CGb-Dh-PKt"/>
                             <constraint firstItem="POe-Iy-cTx" firstAttribute="top" secondItem="KUS-Sm-i1f" secondAttribute="bottom" constant="157" id="Knr-wC-mfb"/>
                             <constraint firstItem="uH6-r0-wX7" firstAttribute="centerX" secondItem="yqI-GY-hPj" secondAttribute="centerX" id="L8I-fv-t0f"/>
-                            <constraint firstItem="VBU-qU-Ino" firstAttribute="top" secondItem="uH6-r0-wX7" secondAttribute="bottom" constant="50" id="LUm-4d-rVs"/>
-                            <constraint firstItem="VBU-qU-Ino" firstAttribute="leading" secondItem="KUS-Sm-i1f" secondAttribute="leading" id="PhW-dg-ldh"/>
+                            <constraint firstItem="VBU-qU-Ino" firstAttribute="leading" secondItem="KUS-Sm-i1f" secondAttribute="leading" constant="-1" id="PhW-dg-ldh"/>
                             <constraint firstItem="KUS-Sm-i1f" firstAttribute="top" secondItem="VBU-qU-Ino" secondAttribute="bottom" constant="33" id="VHh-Ur-gM9"/>
                             <constraint firstItem="KUS-Sm-i1f" firstAttribute="top" secondItem="VBU-qU-Ino" secondAttribute="bottom" constant="45" id="Wfw-2P-CyC"/>
                             <constraint firstItem="VBU-qU-Ino" firstAttribute="leading" secondItem="yqI-GY-hPj" secondAttribute="leading" constant="185" id="d2H-zu-97m"/>
                             <constraint firstItem="KUS-Sm-i1f" firstAttribute="trailing" secondItem="VBU-qU-Ino" secondAttribute="trailing" id="glP-xn-4qF"/>
-                            <constraint firstItem="POe-Iy-cTx" firstAttribute="top" secondItem="KUS-Sm-i1f" secondAttribute="bottom" constant="169" id="lUu-9c-DLO"/>
+                            <constraint firstItem="VBU-qU-Ino" firstAttribute="top" secondItem="uH6-r0-wX7" secondAttribute="bottom" constant="25" id="jgM-3h-LFD"/>
                             <constraint firstItem="VBU-qU-Ino" firstAttribute="trailing" secondItem="KUS-Sm-i1f" secondAttribute="trailing" id="qFs-dO-He6"/>
-                            <constraint firstItem="KUS-Sm-i1f" firstAttribute="top" secondItem="VBU-qU-Ino" secondAttribute="bottom" constant="33" id="w9o-2N-eb6"/>
+                            <constraint firstItem="KUS-Sm-i1f" firstAttribute="top" secondItem="VBU-qU-Ino" secondAttribute="bottom" constant="10" id="xSY-Om-HhM"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">

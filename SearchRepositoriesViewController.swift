@@ -52,7 +52,7 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDataSource,
       func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         println(searchBar.text)
         
-        self.networkController.fetchRepositoriesBasedOnSearch(searchBar.text, callback: { (items, errorDescription) -> (Void) in
+        NetworkController.sharedNetworkController.fetchRepositoriesBasedOnSearch(searchBar.text, callback: { (items, errorDescription) -> (Void) in
         println(items)
         self.repositories = items!
           

@@ -28,7 +28,6 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDataSource,
       let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
       self.networkController = appDelegate.networkController
       
-      
         }
   
       func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,9 +39,6 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDataSource,
         cell.textLabel?.text = self.repositories[indexPath.row].name
         return cell
       }
-
-
-      
 //      func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 //        let cell = tableView.dequeueReusableCellWithIdentifier("REPO_CELL", forIndexPath: indexPath) as UITableViewCell
 //        return cell
@@ -68,9 +64,6 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDataSource,
   func searchBar(searchBar: UISearchBar, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
     return text.validate()
   }
-  
-  
-  
   // MARK: - Navigationrl
   
   // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -82,9 +75,7 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDataSource,
       println(repo)
       destinationVC.url = repo.url
     }
-  }
-
-  
+  }  
 }
 
 

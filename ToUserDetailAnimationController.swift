@@ -33,14 +33,11 @@ class ToUserDetailAnimationController : NSObject, UIViewControllerAnimatedTransi
     toVC.view.frame = transitionContext.finalFrameForViewController(toVC)
     toVC.view.alpha = 0
     toVC.imageView.hidden = true
-    
     containerView.addSubview(toVC.view)
-    containerView.addSubview(snapshotOfCell)
-    
+    containerView.addSubview(snapshotOfCell)    
     //telling autolayout to make a pass
     toVC.view.setNeedsLayout()
     toVC.view.layoutIfNeeded()
-    
     let duration = self.transitionDuration(transitionContext)
     
     UIView.animateWithDuration(duration, animations: { () -> Void in
@@ -57,9 +54,7 @@ class ToUserDetailAnimationController : NSObject, UIViewControllerAnimatedTransi
         snapshotOfCell.removeFromSuperview()
         transitionContext.completeTransition(true)
     }
-    
-    
-    
+
   }
   
 }

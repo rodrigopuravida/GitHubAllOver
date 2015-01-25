@@ -63,7 +63,6 @@ class SearchUsersViewController: UIViewController, UICollectionViewDataSource, U
     })
   }
   
-  
   func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
     if (fromVC is SearchUsersViewController && toVC is UserDetailViewController) {
       //return the animation controller
@@ -71,7 +70,6 @@ class SearchUsersViewController: UIViewController, UICollectionViewDataSource, U
     }
     return nil
   }
-  
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     
@@ -86,8 +84,4 @@ class SearchUsersViewController: UIViewController, UICollectionViewDataSource, U
   func searchBar(searchBar: UISearchBar, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
     return text.validate()
   }
-
-  
-  
-  
 }

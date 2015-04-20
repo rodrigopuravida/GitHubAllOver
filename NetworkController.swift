@@ -71,7 +71,7 @@ class NetworkController {
             let tokenResponse = NSString(data: data, encoding: NSASCIIStringEncoding)
             println(tokenResponse)
             
-            let accessTokenComponent = tokenResponse?.componentsSeparatedByString("&").first as String
+            let accessTokenComponent = tokenResponse?.componentsSeparatedByString("&").first as! String
             let accessToken = accessTokenComponent.componentsSeparatedByString("=").last
             println(accessToken!)
             

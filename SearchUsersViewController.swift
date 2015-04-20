@@ -33,7 +33,7 @@ class SearchUsersViewController: UIViewController, UICollectionViewDataSource, U
   }
   
   func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCellWithReuseIdentifier("USER_CELL", forIndexPath: indexPath) as UserCell
+    let cell = collectionView.dequeueReusableCellWithReuseIdentifier("USER_CELL", forIndexPath: indexPath) as! UserCell
     cell.imageView.image = nil
     var user = self.users[indexPath.row]
     if user.avatarImage == nil {
@@ -74,8 +74,8 @@ class SearchUsersViewController: UIViewController, UICollectionViewDataSource, U
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     
     if segue.identifier == "SHOW_USER_DETAIL" {
-      let destinationVC = segue.destinationViewController as UserDetailViewController
-      let selectedIndexPath = self.collectionView.indexPathsForSelectedItems().first  as NSIndexPath
+      let destinationVC = segue.destinationViewController as! UserDetailViewController
+      let selectedIndexPath = self.collectionView.indexPathsForSelectedItems().first  as! NSIndexPath
       destinationVC.selectedUser = self.users[selectedIndexPath.row]
       
     }

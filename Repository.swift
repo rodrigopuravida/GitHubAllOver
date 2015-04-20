@@ -12,12 +12,12 @@ struct Repository {
   
   
   let name : String?
-  let url : String
+  let url : String?
   
   init(jsonDictionary : [String : AnyObject]) {
     
-  self.name = jsonDictionary["name"] as String!
-  self.url = jsonDictionary["html_url"] as String
+  self.name = jsonDictionary["name"] as! String!
+  self.url = jsonDictionary["html_url"] as! String
     
   }
   

@@ -15,7 +15,7 @@ class IntroTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
-      let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+      let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
       self.networkController = appDelegate.networkController
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

@@ -16,9 +16,9 @@ struct User {
   var score : Double
   
   init (jsonDictionary : [String : AnyObject]) {
-    self.name = jsonDictionary["login"] as String
-    self.avatarURL = jsonDictionary["avatar_url"] as String
-    self.login = jsonDictionary["login"] as String
-    self.score = jsonDictionary["score"] as Double
+    self.name = jsonDictionary["login"] as! String
+    self.avatarURL = jsonDictionary["avatar_url"] as! String
+    self.login = jsonDictionary["login"] as! String
+    self.score = jsonDictionary["score"] as! Double
   }
 }

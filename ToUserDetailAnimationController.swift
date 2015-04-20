@@ -17,14 +17,14 @@ class ToUserDetailAnimationController : NSObject, UIViewControllerAnimatedTransi
   func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
     
     //grab references to both of the view controllers
-    let fromVC = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey) as SearchUsersViewController
-    let toVC = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey) as UserDetailViewController
+    let fromVC = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey) as! SearchUsersViewController
+    let toVC = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey) as! UserDetailViewController
     
     let containerView = transitionContext.containerView()
     
     //find the selected cell and make a snapshot of the imageview that is going to move
-    let selectedIndexPath = fromVC.collectionView.indexPathsForSelectedItems().first as NSIndexPath
-    let cell = fromVC.collectionView.cellForItemAtIndexPath(selectedIndexPath) as UserCell
+    let selectedIndexPath = fromVC.collectionView.indexPathsForSelectedItems().first as! NSIndexPath
+    let cell = fromVC.collectionView.cellForItemAtIndexPath(selectedIndexPath) as! UserCell
     let snapshotOfCell = cell.imageView.snapshotViewAfterScreenUpdates(false)
     cell.imageView.hidden = true
     snapshotOfCell.frame = containerView.convertRect(cell.imageView.frame, fromView: cell.imageView.superview)
